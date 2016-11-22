@@ -53,6 +53,12 @@ public class BasketTest {
         assertEquals( 0, basket.getItemsInBasket() );
     }
 
+    @Test
+    public void testTotalBasketValue(){
+        basket.setItemInBasket(meat);
+        basket.setItemInBasket(meat);
+        assertEquals( 13.98, basket.getTotalValue() );
+    }
 
 
 

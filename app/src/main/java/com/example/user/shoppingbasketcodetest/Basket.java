@@ -39,18 +39,12 @@ public class Basket {
     }
 
     public double getTotalValue(){
-        //work out the price of all the food in foodStuff array and return it.
 
         double total = 0;
-
-//        if(){
-//             //do something
-//        }
 
         for (Edible item : this.foodStuff){
             total = total + item.getPrice();
         }
-
         return total;
     }
 
