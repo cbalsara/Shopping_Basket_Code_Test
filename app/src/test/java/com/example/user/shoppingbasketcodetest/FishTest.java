@@ -14,7 +14,7 @@ public class FishTest {
 
     @Before
     public void Before(){
-        fish = new Fish(3.99, "Fresh");
+        fish = new Fish(3.99, "Fresh", true);
     }
 
     @Test
@@ -27,6 +27,9 @@ public class FishTest {
         fish.setPrice(1.99);
         assertEquals( 1.99, fish.getPrice() );
     }
+
+    @Test
+    public void
 
     @Test
     public void testHasName(){
