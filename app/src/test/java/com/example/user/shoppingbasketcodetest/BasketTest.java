@@ -19,7 +19,7 @@ public class BasketTest {
     @Before
     public void before(){
         basket = new Basket();
-        meat = new Meat(6.99, "Premium");
+        meat = new Meat(6.99, "Premium", true);
         fish = new Fish(5.10, "Fresh", true);
     }
 

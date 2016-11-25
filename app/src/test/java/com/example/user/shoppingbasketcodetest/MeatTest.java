@@ -15,7 +15,7 @@ public class MeatTest {
 
     @Before
     public void Before(){
-        meat = new Meat(6.99, "Premium");
+        meat = new Meat(6.99, "Premium", false);
     }
 
     @Test
@@ -27,6 +27,11 @@ public class MeatTest {
     public void testSetPrice(){
         meat.setPrice(9.79);
         assertEquals( 9.79, meat.getPrice() );
+    }
+
+    @Test
+    public void testIsBOGOF(){
+        assertEquals( false, meat.getBOGOF() );
     }
 
     @Test
