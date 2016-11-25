@@ -47,6 +47,23 @@ public class Basket {
         }
         return total;
     }
+//    Return all the BOGOF items in the arrayList
+    public Edible getBOGOFItems(String itemName){
+        for(int i = 0; i < foodStuff.size(); i++){
+
+        }
+    }
+
+
+
+//    public Edible getBOGOFItems(String itemName){
+//        for (int i = 0; i < foodStuff.size() ; i++) {
+//            if (this.foodStuff.get(i).getBOGOF() == itemName ){
+//                return this.foodStuff.get(i);
+//            }
+//        }
+//        return null;
+//    }
 
 
 
