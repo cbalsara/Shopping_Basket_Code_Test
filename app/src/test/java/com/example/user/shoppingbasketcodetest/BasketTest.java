@@ -38,7 +38,6 @@ public class BasketTest {
     @Test
     public void testRemoveItemInBasket(){
         basket.setItemInBasket(meat);
-//        the fish will be removed as its index is 1
         basket.setItemInBasket(fish);
         basket.setItemInBasket(meat);
         basket.removeItemInBasket();
@@ -57,7 +56,8 @@ public class BasketTest {
     public void testTotalBasketValue(){
         basket.setItemInBasket(meat);
         basket.setItemInBasket(meat);
-        assertEquals( 13.98, basket.getTotalValue() );
+        basket.setItemInBasket(fish);
+        assertEquals( 19.08, basket.getTotalValue() );
     }
 
 

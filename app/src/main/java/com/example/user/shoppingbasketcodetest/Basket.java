@@ -27,8 +27,8 @@ public class Basket {
 
 //    remove specific item from basket
     public Edible removeItemInBasket(){
-        if(getItemsInBasket() > 0) {
-            return foodStuff.remove(1);
+        if (getItemsInBasket() > 0) {
+            return foodStuff.remove(0);
         }
         return null;
     }
@@ -39,11 +39,11 @@ public class Basket {
     }
 
     public double getTotalValue(){
-
         double total = 0;
-
-        for (Edible item : this.foodStuff){
-            total = total + item.getPrice();
+//        whatever is edible in the foodstuff arrayList, return the total
+//        + the 'price' of that 'edible' item
+        for (Edible foodItem : this.foodStuff){
+            total = total + foodItem.getPrice();
         }
         return total;
     }
