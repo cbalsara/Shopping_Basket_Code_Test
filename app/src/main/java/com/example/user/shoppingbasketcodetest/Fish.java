@@ -8,13 +8,13 @@ public class Fish implements Edible {
 
     protected double price;
     protected String name;
-    protected boolean bogof;
+    protected boolean BOGOF;
 
 
     public Fish(double price, String name, boolean freeStuff ){
         this.price = price;
         this.name = name;
-        this.bogof = freeStuff;
+        this.BOGOF = freeStuff;
     }
 
     public double getPrice(){
@@ -26,7 +26,7 @@ public class Fish implements Edible {
     }
 
     public boolean getBOGOF(){
-        return this.bogof;
+        return this.BOGOF;
     }
 
 
