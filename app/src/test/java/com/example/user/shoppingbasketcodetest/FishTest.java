@@ -29,7 +29,9 @@ public class FishTest {
     }
 
     @Test
-    public void
+    public void testIsBOGOF(){
+        assertEquals( true, fish.getBOGOF() );
+    }
 
     @Test
     public void testHasName(){
